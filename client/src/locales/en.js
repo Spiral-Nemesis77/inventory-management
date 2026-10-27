@@ -6,6 +6,7 @@ export default {
     orders: 'Orders',
     finance: 'Finance',
     demandForecast: 'Demand Forecast',
+    restocking: 'Restocking',
     companyName: 'Catalyst Components',
     subtitle: 'Inventory Management System'
   },
@@ -55,7 +56,9 @@ export default {
       daysDelayed: 'Days Delayed',
       priority: 'Priority',
       unitsShort: 'units short',
-      days: 'days'
+      days: 'days',
+      createPO: 'Create PO',
+      viewPO: 'View PO'
     },
     topProducts: {
       title: 'Top Products by Revenue',
@@ -112,6 +115,12 @@ export default {
     onTimeDelivery: 'On-Time Delivery',
     itemsCount: '{count} items',
     quantity: 'Qty',
+    submittedOrders: 'Submitted Orders',
+    noSubmittedOrders: 'No restocking orders submitted yet',
+    leadTime: 'Lead Time',
+    leadTimeDays: '{days} days',
+    submittedDate: 'Submitted',
+    totalCost: 'Total Cost',
     table: {
       orderNumber: 'Order Number',
       orderId: 'Order ID',
@@ -126,6 +135,36 @@ export default {
       status: 'Status',
       expectedDelivery: 'Expected Delivery',
       actualDelivery: 'Actual Delivery'
+    }
+  },
+
+  // Restocking
+  restocking: {
+    title: 'Restocking',
+    description: 'Plan restocking orders from the demand forecast within your budget',
+    budget: 'Budget',
+    availableBudget: 'Available Budget',
+    selectedTotal: 'Selected Total',
+    remaining: 'Remaining',
+    longestLeadTime: 'Longest Lead Time',
+    leadTimeDays: '{days} days',
+    recommendations: 'Recommended Items',
+    recommendationsHint: 'Items are ranked by demand growth and added while they fit the budget',
+    noRecommendations: 'No items fit within this budget',
+    placeOrder: 'Place Order',
+    placingOrder: 'Placing Order...',
+    orderPlaced: 'Order {orderNumber} submitted.',
+    viewOrders: 'View in Orders',
+    orderFailed: 'Failed to place order',
+    table: {
+      include: 'Include',
+      sku: 'SKU',
+      itemName: 'Item Name',
+      trend: 'Trend',
+      quantity: 'Quantity',
+      unitCost: 'Unit Cost',
+      lineTotal: 'Line Total',
+      leadTime: 'Lead Time'
     }
   },
 
@@ -206,7 +245,8 @@ export default {
     backordered: 'Backordered',
     inStock: 'In Stock',
     lowStock: 'Low Stock',
-    adequate: 'Adequate'
+    adequate: 'Adequate',
+    submitted: 'Submitted'
   },
 
   // Trends
@@ -309,6 +349,36 @@ export default {
     english: 'English',
     japanese: 'Japanese',
     selectLanguage: 'Select Language'
+  },
+
+  // Purchase orders
+  purchaseOrder: {
+    createTitle: 'Create Purchase Order',
+    viewTitle: 'Purchase Order',
+    sku: 'SKU',
+    item: 'Item',
+    shortage: 'Shortage',
+    units: 'units',
+    supplierName: 'Supplier Name',
+    quantity: 'Quantity',
+    unitCost: 'Unit Cost (USD)',
+    expectedDelivery: 'Expected Delivery Date',
+    notes: 'Notes',
+    notesPlaceholder: 'Optional notes for the supplier',
+    total: 'Total',
+    status: 'Status',
+    createdDate: 'Created',
+    poId: 'PO ID',
+    submit: 'Create Purchase Order',
+    submitting: 'Creating...',
+    loadError: 'Failed to load purchase order',
+    createError: 'Failed to create purchase order',
+    errors: {
+      supplierRequired: 'Supplier name is required',
+      quantityInvalid: 'Quantity must be a whole number greater than 0',
+      unitCostInvalid: 'Unit cost must be 0 or greater',
+      dateRequired: 'Expected delivery date is required'
+    }
   },
 
   // Common
